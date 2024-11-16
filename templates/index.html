@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiger Detection</title> 
+</head>
+    
+<body>
+
+<style>
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      /*background-image: url('https://img.freepik.com/free-photo/clay-bowls-full-raw-lentil-peas-beans-stone-background_114579-90584.jpg');*/
+      /*background-image: url('https://img.freepik.com/free-photo/raw-dried-red-beans-scattered-half-circle-shape-marble-surface_114579-71400.jpg?w=740&t=st=1704697915~exp=1704698515~hmac=92a063f5c265a933e1fc085f1bb0df8dd76f83845553587fc8955c64d0e80b86');*/
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-color:darkgray;
+      font-family: Arial, Helvetica, sans-serif;
+          }
+          
+    form {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .row {
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 10px;
+    }
+
+    .col {
+    float: left;
+    width: 50%
+    }
+
+    .left {
+    text-align: left;
+    padding: 0 20px;
+    }
+
+    .tbox{
+    border-radius:10px;
+    padding:6px 2px;
+    border: 1px solid #ccc;
+    }
+
+    .innerdiv{
+      border: 1px solid #dad3d3; 
+      padding:50px 10px;
+      background-color: white; 
+      height:1040px;
+      font-size: small;
+    }
+    
+    .sbtbutton{
+      display: inline-block;
+      outline:none;
+      line-height: 1;
+      border-radius: 500px;
+      transition-property: background-color,border-color,color,box-shadow,filter;
+      border: 1px solid transparent;
+      min-width:160px;
+      white-space:normal;
+      font-weight:700;
+      text-align:center;
+      padding: 14px 40px;
+      background-color: #025246;
+      height:48px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: lighter;
+    }
+
+    tr {
+            margin-bottom: 10px; /* Adjust the margin as needed */
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+<form action="classification" method="post">
+    <div style="background-color:#025246 ;padding:10px; ">
+    <h2 style="color:white;text-align:center;">TIGER DETECTION </h2>
+    </div>
+    
+    <div class="innerdiv">
+        <label for="image">Select an image:</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+        <br><br>
+        
+        <input type="submit" value="SUBMIT" class="sbtbutton">      
+    </div>
+    
+</form>
+
+</body>
+</html>
